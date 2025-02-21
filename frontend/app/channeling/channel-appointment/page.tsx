@@ -1,5 +1,6 @@
 "use client";
 
+
 import { ChannelAppointmentForm } from "@/components/ui/forms/ChannelAppointmentForm";
 
 export default function ChannelAppointment() {
