@@ -50,7 +50,7 @@ export default function Footer() {
                   </a>
               </div>
               <p className="text-sm text-gray-500">
-                  &copy; {new Date().getFullYear()} Online ClickShop Store. All rights reserved.
+                  &copy; {new Date().getFullYear()} Unicare treetment Center. All rights reserved.
               </p>
           </div>
       </footer>
