@@ -1,3 +1,23 @@
+/*
+
+Todo: 
+appointment form -> *first name, *last name, *dob, *gender, *contact No, alternative contact no, address, marital state,  email, payment status, generated patient id & appointment id & ref no(using appointment ID & queue no, *appoint time&date, generated status(paid, not paid) -> appointment details page(if paid -> payment gateway(status appointment) <- toatal payemnt) <- inserted details, ref no, date time, current queue no
+
+formfields {
+First Name (Text)
+Last Name (Text)
+Date of Birth (Date)
+Gender (Radio: Male/Female/Prefer not to state)
+Marital State (Radio: Married/Single/Widowed)
+Phone Number (Phone)
+Alternative Phone Number (Phone) (Optional)
+Email (Email)
+Address (Text)
+Appointment Date & Time (Date-Time)
+Payment Status (Dropdown: Paid/Unpaid)
+}
+
+*/
 "use client";
 
 import * as z from "zod";
@@ -30,7 +50,7 @@ const formSchema = z
     companyName: z.string().optional(),
   })
   .refine((data) => data.password === data.passwordConfirm, {
-    message: "Password do not match",
+    message: "Password do not match",     
     path: ["passwordConfirm"],
   })
   .refine(
