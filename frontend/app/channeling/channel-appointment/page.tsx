@@ -1,7 +1,9 @@
 "use client";
 
 
-import { ChannelAppointmentForm } from "@/components/ui/forms/ChannelAppointmentForm";
+
+import { ChannelAppointmentForm } from "@/components/ui/forms";
+// import TestForm from "@/components/ui/forms/TestForm";
 
 export default function ChannelAppointment() {
   return (
@@ -9,7 +11,7 @@ export default function ChannelAppointment() {
       <h1 className="text-black text-3xl font-bold text-center mb-6">
         This is channeling appointment page
       </h1>
-      <ChannelAppointmentForm />
+      <ChannelAppointmentForm/>
     </div>
   );
 }
