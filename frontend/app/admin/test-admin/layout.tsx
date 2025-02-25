@@ -1,7 +1,7 @@
 'use client';
 
 import Logo from '@/public/logo-bg-removed2.png';
-import Image from 'next/image';
+import Image from 'next/image'; // Import the Image component from Next.js
 import { BiSolidDashboard } from 'react-icons/bi';
 import { BsBox, BsFilePost, BsGrid } from 'react-icons/bs';
 import { FaBlog } from 'react-icons/fa';
@@ -18,7 +18,6 @@ export default function AdminAppLayout({
 }) {
   const [isBlogOpen, setIsBlogOpen] = useState(false);
 
-  // Toggle blog dropdown visibility
   const toggleBlogDropdown = () => {
     setIsBlogOpen(!isBlogOpen);
   };
@@ -40,7 +39,13 @@ export default function AdminAppLayout({
                 <HiMenuAlt2 className="w-6 h-6" />
               </button>
               <a href="https://flowbite.com" className="flex ms-2 md:me-24">
-                <Image src={Logo} className="h-10 w-28" alt="Unicare Logo" />
+                <Image
+                  src={Logo}
+                  className="h-10 w-28"
+                  alt="Unicare Logo"
+                  width={112} // Specify width
+                  height={40} // Specify height
+                />
               </a>
             </div>
             <div className="flex items-center">
@@ -53,7 +58,7 @@ export default function AdminAppLayout({
                     data-dropdown-toggle="dropdown-user"
                   >
                     <span className="sr-only">Open user menu</span>
-                    <img
+                    <Image
                       width={32}
                       height={32}
                       className="w-8 h-8 rounded-full"
@@ -171,7 +176,9 @@ export default function AdminAppLayout({
         </div>
       </aside>
 
-      <div className="p-4 sm:ml-64 mt-14">{children}</div>
+      <div className="p-4 sm:ml-64 mt-14">
+        {children}
+      </div>
     </div>
   );
 }

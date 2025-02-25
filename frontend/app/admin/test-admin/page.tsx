@@ -1,12 +1,13 @@
-import TestComponent from "@/components/layout/Test"
-import Footer from "@/components/layout/Footer"
 import Header from "@/components/layout/HeaderNavigation"
+
+import Footer from "@/components/layout/Footer"
+import Testo from "@/components/layout/Test"
 
 export default function Test() {
   return (
     <>
       <Header/>
-      <TestComponent/>
+        <Testo/>
       <Footer/>
     </>
   );
