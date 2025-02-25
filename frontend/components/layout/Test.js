@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 border rounded-lg shadow-md">
+    <div className="max-w-md mx-auto p-6 border rounded-lg shadow-md bg-red-600">
       <h2 className="text-xl font-bold mb-4">Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <label className="block mb-2">Name:</label>
